@@ -2,7 +2,7 @@
 """Self-contained mini backtest engine for the AI Trading Floor toolkit.
 
 Reads ONE parquet of daily bars (kit schema: Date, Open, High, Low, Close, Volume),
-runs a long-only strategy chosen via --strategy, and writes a results.json containing
+runs a strategy chosen via --strategy, and writes a results.json containing
 the trade list, the per-bar equity curve, and summary stats. No repository imports;
 the only local dependency is the sibling ``indicators.py`` for indicator math.
 
