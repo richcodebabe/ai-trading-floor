@@ -31,7 +31,7 @@ unchanged in any fresh project. Deps: `../requirements.txt`.
 | `walkforward.py` | Anchored multi-window walk-forward of a SINGLE strategy → per-window OOS Sharpe + efficiency |
 | `robustness.py` | Parameter-plateau scoring from the grid (plateau vs spiky) |
 
-**Built-in strategies** (`STRATEGIES` registry in `backtest.py`, all long-only): `sma_crossover`,
+**Built-in strategies** (`STRATEGIES` registry in `backtest.py`): `sma_crossover`,
 `rsi_reversion`, `breakout`, `bollinger_meanrev` (SMA200+RSI filters, ATR + time stop),
 `donchian_trend` (55/20 + 2·ATR), `vol_gate_trend` (EMA50/200 + annualized-vol gate + 3·ATR —
 an honest GATE, not vol sizing, since the engine is all-in), `dual_momentum`. Add your own via
